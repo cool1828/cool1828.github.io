@@ -33,11 +33,13 @@
             max-height: 200px;
             min-height: 200px;
         }
+
         .mainThreeMiddleTop {
             height: 200px;
             max-height: 200px;
             min-height: 200px;
         }
+
         .mainThreeMiddleBottom {
             height: 100px;
             max-height: 100px;
@@ -53,7 +55,6 @@
         body {
             font-size: 48px;
             font-weight: bold;
-
         }
     </style>
 
@@ -73,104 +74,66 @@
             <div class="row">
                 <div class="col-md-12 randomColor header"></div>
             </div>
+
             <div class="row">
                 <div class="col-md-3 randomColor mainThree">
                     <div class="row">
-                        <div class="col-md-3 randomColor mainThreeLeft">
+                        <div class="col-md-12 randomColor mainThreeLeft">
+
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 randomColor mainThreeLeft">
-                          <div class="row">
-                            <div class="col-md-12 randomColor mainThreeMiddleTop">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-3 randomColor mainThreeMiddleBottom">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-9 randomColor mainThreeMiddleBottom">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-3 randomColor mainThreeMiddleBottom">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-9 randomColor mainThreeMiddleBottom">
-                            </div>
-                          </div>  <div class="row">
-                              <div class="col-md-3 randomColor mainThreeMiddleBottom">
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-9 randomColor mainThreeMiddleBottom">
-                              </div>
-                            </div>  <div class="row">
-                                <div class="col-md-3 randomColor mainThreeMiddleBottom">
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-9 randomColor mainThreeMiddleBottom">
-                                </div>
-                              </div>
+                        <div class="col-md-12 randomColor mainThreeLeft">
 
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-md-3 randomColor mainThreeLeft">
+                        <div class="col-md-12 randomColor mainThreeLeft">
+                          <div class="row">
+                          <div class="col-md-12 randomColor mainThreeRight"></div>
+
+                          </div>
+
+
+
                         </div>
                     </div>
-
-                    <div class="col-md-7 randomColor mainThree"></div>
-                    <div class="col-md-2 randomColor mainThree">
-                        <div class="row">
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 randomColor mainThreeRight">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 randomColor mainThreeRight">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 randomColor mainThreeRight">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12 randomColor footer"></div>
-                    </div>
-
-
                 </div>
 
+                <div class="col-md-7 randomColor mainThree"></div>
 
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-                <script>
-                    function getRandomNumber(min, max) {
-                        return Math.floor(Math.random() * max + min);
-                    }
+                <div class="col-md-2 randomColor mainThree"></div>
+            </div>
 
-                    $(document).ready(function() {
+            <div class="row">
+                <div class="col-md-12 randomColor footer"></div>
+            </div>
 
-                        var bodyColumns = $(".randomColor");
-
-                        bodyColumns.each(function() {
-
-                            $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
-                        })
-
-                        $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+        </div>
 
 
-                    })
-                </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * max + min);
+            }
+
+            $(document).ready(function() {
+
+                var bodyColumns = $(".randomColor");
+
+                bodyColumns.each(function() {
+
+                    $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+                })
+
+                $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+        </script>
     </body>
 
 </html>
