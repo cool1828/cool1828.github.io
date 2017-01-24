@@ -4,8 +4,19 @@
     max-height: 75px;
 }
 
-#main [class*='col-md-3'] {
-    height: 450px;
-    min-height: 450px;
-    max-height: 450px;
+/*BLOG.HTML*/
+
+.col-md-3, .col-md-9{
+height: 500px;
+}
+
+.col-md-9{
+  float: right;
+}
+
+
+/*PORTFOLIO.HTML*/
+
+#port-header2{
+  height: 300px;
 }
