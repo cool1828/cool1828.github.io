@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>In Class</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header {
+            height: 60px;
+            max-height: 60px;
+            min-height: 60px;
+        }
+
+        .mainBody {
+            height: 100px;
+            max-height:100px;
+            min-height: 100px;
+            font-size: 16px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            line-height:100px;
+        }
+        .secondMain {
+            height: 90px;
+            max-height: 90px;
+            min-height: 90px;
+        }
+        .secondMain img{
+          height: 75%;
+          margin: 0 auto;
+          display: block;
+
+
+        }
+        .lowerThird{
+            height: 120px;
+            max-height: 120px;
+            min-height: 120px;
+        }
+
+        body {
+            font-size: 48px;
+            font-weight: bold;
+            ;
+        }
+
+        .greenapple{
+          max-width: 75px;
+          max-height: 75px;
+          margin-left: 18%;
+          margin-top: 5%;
+        }
+
+        .orangeapple{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100px;
+          max-height: 100px;
+        }
+
+        .purpleapple{
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100px;
+          max-height: 100px;
+        }
+        #purpleapple2{
+          left: 30%;
+
+        }
+        #purpleapple1{
+          left: 70%;
+        }
+
+    </style>
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 randomColor header"></div>
+                  <div class="col-md-4 randomColor header"></div>
+                    <div class="col-md-2 randomColor header"></div>
+                    <div class="col-md-2 randomColor header"></div>
+                    <div class="col-md-2 randomColor header"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 randomColor mainBody"><p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p></div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 randomColor secondMain"> <img src="images/apple.jpg" alt="apple">  </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 randomColor lowerThird"></div>
+                <div class="col-md-4 randomColor lowerThird">
+
+                  <img class="greenapple" src="images/greenapple.jpg" alt="green apple">
+                  <img class="greenapple" src="images/greenapple2.jpg" alt="green apple">
+                </div>
+                <div class="col-md-4 randomColor lowerThird"></div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 randomColor lowerThird">
+                  <img class="orangeapple" src="images/orangeapple.jpg" alt="Apple with Orange inside">
+                </div>
+                <div class="col-md-4 randomColor lowerThird">
+                  <img class="purpleapple" id="purpleapple2" src="images/purpleapple2.jpg" alt="Purple Apples">
+                  <img class="purpleapple" id="purpleapple1" src="images/purpleapple.jpg" alt="Purple Apple">
+                </div>
+                <div class="col-md-4 randomColor lowerThird"></div>
+
+
+            </div>
+            <div class="row">
+              <div class="col-md-4 randomColor lowerThird"></div>
+              <div class="col-md-4 randomColor lowerThird"></div>
+              <div class="col-md-4 randomColor lowerThird"></div>
+            </div>
+
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * max + min);
+            }
+
+            $(document).ready(function() {
+
+                var bodyColumns = $(".randomColor");
+
+                bodyColumns.each(function() {
+
+                    $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+                })
+
+                $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+        </script>
+    </body>
+
+</html>
