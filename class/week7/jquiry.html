@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week7</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<p>
+  Hello World
+</p>
+<div id="myDiv">
+  Look some text!
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    //()to execute a function
+    //make a slash to ignore this line
+      /**
+      Everything inseide here is ignored
+      */
+      //  alert("this is a popup");
+      //console.log("this is for debugging messages");
+      var myVar;
+      //in quotes this is a string i.e. text
+      var myAnotherVar="here is my another var";
+
+      //alert(myAnotherVar);
+      console.log(myAnotherVar);
+
+      //concatenation (means sticking things together)
+      var myName="Cheyanne";
+      var myLastName="Haig";
+    //  alert("My name is" +myName +"and my last name is" +myLastName);
+    // {} code block everything in it will be executed
+  //  function sayMyName(){
+    //  console.log("Your name is" +myName);
+
+  //  }
+    //calling the function
+  //  sayMyName();
+  //  function sayMyName2(name){
+    //  console.log("Your name is" +name);
+
+  //  }
+    //calling the function
+    sayMyName2(Cheyanne);
+    sayMyName2("Not Cheyanne");
+    $(document).ready(function(){
+
+      alert("the document is ready!");
+      $("#myDiv").html("Hey, I was able to change the DOM");
+      $("#myDiv").append("<br>add something more!");
+
+
+      /* when the document is ready, jQuery gets the element with id myDiv and
+      calls the html function html will replace the html within the element*/
+
+    });
+
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
