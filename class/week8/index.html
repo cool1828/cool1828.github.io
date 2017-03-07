@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hello</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="carDiv" class="col-md-12">
+
+        </div>
+      </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    //our program
+    //three primitive types
+
+    var myString = "a string";
+    var myNumber = 2;
+    var myVar = "2";
+    var myBoolean = false;
+    var myVar2 = "true";
+
+    //array; declare with square brackets
+    //declaring an empty array
+
+    var myArray = [];
+
+    var myFullArray = ["calen","Nicole","Evan"];
+
+    console.log(myFullArray[0]);
+    console.log("myFullArray 2nd value ="+myFullArray[1]);
+
+    var myMixArray = [3,"David",false];
+    myMixArray.push("another value");
+    console.log(myMixArray values: "+myMixArray");
+
+    //for a car website you would want info like type, price, milage, colour, fuel Type, src.
+    //when the pages load, we go to the database and get some info about a car
+    var car = {
+      type : "SUV",
+      price: 4500,
+      milage : 24,
+      color : "magenta",
+      fuelType : "electric",
+      src : "images/car1.jpg"
+      message : function(){
+          console.log("A car is useful");
+
+      }
+      //object name.property
+    };
+console.log(car.type);
+console.log(car.price);
+console.log(car.message());
+
+
+$(document).ready(function(){
+/*  $("#carDiv").html("<div id='conterDiv'>");
+  $("#carDiv").html("<div>"+car.type+"</div>");
+  $("#carDiv").append("<img src="images/car.jpg +"'/>);
+  $("#carDiv").append("<div>"+car.price+"</div>");
+*/
+
+var myHtml= "<div id='conterDiv'>"+
+"<div id='conterDiv'>"+
+"<div>"+car.type+"</div>"+
+"<img src='"images/car1.jpg +"'/>"+
+"<div>"+car.price+"</div>"+
+"</div>";
+
+$("#carDiv").html(myHtml);
+
+
+});
+
+
+var dog = {
+  type : "Border-Collie",
+  price: 500,
+  age : 4,
+  color : "Black and white",
+  src : "images/dog.jpg"
+  message : function(){
+      console.log("A dog is life");
+
+  }
+
+
+  var dog2 = {
+    type : "Corgi",
+    price: 800,
+    age : 2,
+    color : "light brown and white",
+    src : "images/car1.jpg"
+    message : function(){
+        console.log("A car is useful");
+
+    }
+
+    </script>
+  </body>
+</html>
