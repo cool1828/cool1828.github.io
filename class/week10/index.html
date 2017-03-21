@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holy Grail</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header,
+        .footer {
+            height: 100px;
+            max-height: 100px;
+            min-height: 100px;
+        }
+
+        .ads, .posts {
+            min-height: 200px;
+        }
+
+
+    </style>
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+
+                  <ul class="nav nav-tabs nav-justified">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+  </ul>
+</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 randomColor ads">
+                </div>
+                <div class="col-md-8 randomColor" id="posts">
+                </div>
+                <div class="col-md-2 randomColor ads">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 randomColor footer"></div>
+            </div>
+
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+
+        </script>
+        <script type="text/javascript">
+/*
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="..." alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    ...
+  </div>
+</div>
+*/
+
+        var postsData =
+        [
+          {
+            image:"images/ricky.jpg",
+            subHeading:"Friggin Rakins getting into my stuff again!",
+            content:"I told them Rakins not to bother cuz I'm sick of them getting into my stuff. Bubbles said he would help. Julian should be doing the dirty work."
+          },
+          {
+            image:"images/bob.jpg",
+            subHeading:"Just moved to the trailer park!",
+            content:"Just moved into Sunnyville, not quite sure if its going to be worth it. That Ricky guy sure is special."
+          },
+          {
+            image:"images/bubbles.jpg",
+            subHeading:"Welcome to my Kitty Hotel!",
+            content:"Drop your kitties off with me at the kitty hotel in Sunnyville Trailer Park! I offer great prices and long stays! Your kitties will get the best of treatment."
+          },
+          {
+            image:"images/julian.jpg",
+            subHeading:"Bars open fellas!",
+            content:"Sunnyville's bar is back in action 24hrs boys, all day, serving the best of everything. See you guys there! Don't forget half off tuesdays!"
+          },
+          {
+            image:"images/phil.jpg",
+            subHeading:"Avoid Sunnyville Trailer Park!",
+            content:"People there are crazy, guns go off all night, jacob comes into your house to steal stuff, watch out get out!"
+          },
+          {
+            image:"images/matt.jpg",
+            subHeading:"Left on Mars Help!",
+            content:"Yeah so got stuck on Mars come getme, you left me you jerks, this is stupid!"
+          }
+        ];
+
+        var myHtml = "";
+  //loops through postsData
+        for(var i=0; i<postsData.length;i=i+1){
+          myHtml = myHtml + '<div class="media">' +
+            '<div class="media-left">'+
+              '<a href="#">'+
+                '<img class="media-object" src="'+postsData[i].image +'" alt="...">'+
+              '</a>'+
+          '</div>'+
+          '<div class="media-body">'+
+            '<h4 class="media-heading">'+postsData[i].subHeading +'</h4>'+
+              postsData[i].content +
+            '</div>'+
+          '</div>';
+        }
+
+        $(document).ready(function(){
+        $("#posts").html(myHtml);
+      })
+
+        </script>
+    </body>
+
+</html>
